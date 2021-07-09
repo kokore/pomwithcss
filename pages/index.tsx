@@ -1,7 +1,19 @@
+import { Fragment } from 'react'
+
+import Head from 'next/head'
+
+import Header from 'components/header'
+
 const Home = () => (
-	<button className="py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-green-500 hover:bg-green-700">
-		Click me
-	</button>
+	<Fragment>
+		<Head>
+			<title>Pom with CSS</title>
+		</Head>
+
+		<main>
+			<Header />
+		</main>
+	</Fragment>
 )
 
 export default Home
